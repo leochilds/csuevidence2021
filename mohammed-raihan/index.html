@@ -1,44 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mohammed Raihan</title>
-  </head>
-  <body>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Mohammed Raihan</title>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <a href="../index.html">Back to Index</a>
     <h1>Mohammed Raihan's Frontend Web Development</h1>
-    <table>
-        <thead>
-            <tr>
+    <div class="row">
+      <div class="col col-4">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
                 <th>Name</th>
                 <th>freecodecamp Profile</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
                 <td>Mohammed Raihan</td>
                 <td><a target="_blank" href="https://www.freecodecamp.org/sticky_hacker">sticky_hacker</a></td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="./tribute.html">Tribute Page</a></li>
-    </ul>
-    <!-- Optional JavaScript; choose one of the two! -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col">
+        <h2>Projects</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tributePage">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Tribute Page
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="tributePage" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p><a href="./tribute.html">Link to tribute page</a></p>
+                <pre>
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot; crossorigin=&quot;anonymous&quot;&gt;
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+    &lt;title id=&quot;title&quot;&gt;Tribute for the anime Jojo's Bizarre Adventure&lt;/title&gt;
+
+    &lt;style&gt;
+        .center-boi {
+        
+        margin: auto;
+        display: block;
+        }
+        img {
+            max-width: 100%;
+        }
+    &lt;/style&gt;
+
+  &lt;/head&gt;
+  &lt;body id=&quot;main&quot; &gt;
+    &lt;figure id=&quot;img-div&quot; class=&quot;container&quot;&gt;
+
+        &lt;img class=&quot;center-boi&quot; src=&quot;https://www.mobygames.com/images/covers/l/382051-jojo-s-bizarre-adventure-eyes-of-heaven-playstation-4-front-cover.png&quot; alt= &quot;Cover art for game JoJo's Bizarre Adventure: Eyes of Heaven Containg the main characters in the show&quot; id=&quot;image&quot;&gt;
+        &lt;figcaption class=&quot;center-boi&quot; id=&quot;img-caption&quot;&gt;bruh&lt;/figcaption&gt;
+
+
+    &lt;/figure&gt;
+    
+    &lt;h1 id=&quot;tribute-info&quot;&gt;Bob&lt;/h1&gt;
+
+
+
+
+
+    &lt;a href=&quot;https://en.wikipedia.org/wiki/JoJo%27s_Bizarre_Adventure_(TV_series)&quot; target=&quot;_blank&quot; id=&quot;tribute-link&quot;&gt;&lt;/a&gt;
+
+    &lt;!-- Optional JavaScript; choose one of the two! --&gt;
+
+    &lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;
+    &lt;!--
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js&quot; integrity=&quot;sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    --&gt;
+    &lt;script src=&quot;https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
