@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>DnD Community Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Shojumaru&family=Shrikhand&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            font-family: Shojumaru, monospace;
+            color: rgb(209, 24, 24);
+            text-align: center;
+        }
+        p {
+            color: blanchedalmond;
+            font-family: Montserrat;
+        }
+        .form-label {
+            color:blanchedalmond;
+            font-family: Montserrat;
+        }
+        .form-check-label {
+            color:blanchedalmond;
+            font-family: Montserrat;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-sm">
+    <h1 id="title">DnD Community Survey</h1>
+    <p id="description">A study on the Dungeons and Dragons community and their styles of play.</p>
+    </div>
+    <div class="container-sm">
+        <form id="survey-form">
+            <div class="mb-3">
+                <label for="name" class="form-label" id="name-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name Here" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label" id="email-label">E-Mail</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your E-Mail Address Here" required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="number" class="form-label" id="number-label">What is the highest Character Level you have played to/DM'd to?</label>
+                <input type="number" class="form-control" placeholder="Level" aria-describedby="levelHelp" min="1" max="30" id="number">
+                <div id="levelHelp" class="form-text">If you have multiclassed, you character level is the sum of all your class levels.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="dropdown">Which describes your current table position best?</label>
+                <select class="form-select" id="dropdown">
+                  <option selected>Choose...</option>
+                  <option value="pc">Player</option>
+                  <option value="dm">Dungeon Master</option>
+                  <option value="ncp">Not Currently Playing</option>
+                </select>
+              </div>
+              <br>
+              <div class="form-group">
+                <p>Which edtion of Dungeons and Dragons do you primarily play?</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="1" value="shows">
+                  <label class="form-check-label" for="1">
+                    1E
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="1.5" value="shows">
+                  <label class="form-check-label" for="1.5">
+                    AD&D
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="2" value="shows">
+                  <label class="form-check-label" for="2">
+                    2E
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="2.5" value="shows">
+                  <label class="form-check-label" for="2.5">
+                    2.5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="3" value="shows">
+                  <label class="form-check-label" for="3">
+                    3E
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="3.5" value="shows">
+                  <label class="form-check-label" for="3.5">
+                    3.5
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="4" value="shows">
+                  <label class="form-check-label" for="4">
+                    4E
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="actual-play" id="5" value="shows">
+                  <label class="form-check-label" for="5">
+                    5E
+                  </label>
+                </div>
+            </div>
+              <br>
+              <div class="form-group">
+                <p>Which classes have you played as?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="art">
+                    <label class="form-check-label" for="art">
+                      Artificer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="barb">
+                    <label class="form-check-label" for="barb">
+                      Barbarian
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="bard">
+                    <label class="form-check-label" for="bard">
+                      Bard
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="cleric">
+                    <label class="form-check-label" for="cleric">
+                      Cleric
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="druid">
+                    <label class="form-check-label" for="druid">
+                      Druid
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="fight">
+                    <label class="form-check-label" for="fight">
+                      Fighter
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="monk">
+                    <label class="form-check-label" for="monk">
+                      Monk
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="pal">
+                    <label class="form-check-label" for="pal">
+                      Paladin
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="ran">
+                    <label class="form-check-label" for="ran">
+                      Ranger
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="rogue">
+                    <label class="form-check-label" for="rogue">
+                      Rogue
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="sorce">
+                    <label class="form-check-label" for="sorce">
+                      Sorcerer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="war">
+                    <label class="form-check-label" for="war">
+                      Warlock
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="class" id="wiz">
+                    <label class="form-check-label" for="wiz">
+                      Wizard
+                    </label>
+                  </div>
+              </div>
+              <br>
+              <br>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Is there anything else you would like to add?</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+    </div>
+ 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
