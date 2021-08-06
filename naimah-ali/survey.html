@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+.img{ 
+  display: block;
+  margin:auto;
+width: 100px;
+height: 50px;
+ 
+}
+</style>
+
+    <title>hubba hubba vanessa is waiting....</title>
+  </head>
+  <body>
+    <h1 id="title"> Are you qualified to be Vanessa Bloome's Partner?</h1>
+  <p id="description"> This is a very important questionaire in which we (the vanessa stans) 
+    assess ur compatibility with the amazing Vanessa Bloome  </p>
+
+    <form id="survey-form" action="/action_page.php" >
+      <label  for="name" id="name-label">First name:</label>
+      <input id="name" type="text" required placeholder="Write your name" > 
+      <button type="submit">Submit</button>
+
+      <label  for="email" id="email-label" class="labels"> Email:</label>
+      <input id="email" type="email" required placeholder="Write your email"> 
+      <button type="submit">Submit</button>
+
+      <label  for="number" id= "number-label"> Age:</label>
+      <input id="number" type="number" class="input" min="0" max="420" required placeholder="Write your age"> 
+      <button type="submit">Submit</button>
+    
+    
+
+    
+      <!-- dropdown -->
+      <p>Vanessa's Favourites:</p>
+      <div id="VanessasFavouriteThings" class="right">
+      <select id="dropdown" name="VanessasFavouriteThings" class="input"> 
+        <option value="select"> 
+           Select an option </option>
+          <option value="pizza"> Pizza </option>
+          <option value="flowers"> Flowers </option>
+          <option value="bees"> Bee </option>
+        </select>
+      </div>
+       
+<!-- radio buttons -->
+<p > Waffles or Pancakes? </p>
+<ul id="label" class="right" style="list-style: none;">
+  <li class="radio"> <input name="radio-buttons" value="1" type="radio"><label> Waffles</label> </li>
+  <li class="radio"><input name="radio-buttons" value="2" type="radio"
+><label> Pancakes</label></li>
+</ul>
+<!-- checkbox -->
+<p > What  qualities do you have that would be right for best girl Vanessa (check all that apply)</p>
+<ul id="labels" style="list-style: none" class="right" >
+  <li class="checkbox"><label><input type="checkbox" id="Kindness" value="1"> Kindness </label></li>
+  <li class="checkbox"><label><input type="checkbox" id="LikesBees" value="2"> Likes Bees </label></li>
+  <li class="checkbox"><label><input type="checkbox" id="hatesmennamedKen" value="3"> hates men named ken </label></li>
+  <li class="checkbox"><label><input type="checkbox" id="likesflowers" value="4"> likes flowers </label></li>
+  <li class="checkbox"><label><input type="checkbox" id="respectsbeesespeciallyBarry" value="5"> respects bees especially Barry </label></li>
+  <li class="checkbox"><label><input type="checkbox" id="caresforclimatechange" value="6"> cares for climate change </label>></li>
+  <li class="checkbox"><label><input type="checkbox" id="likesjazz" value="7"> likes jazz </label></li>
+</ul>
+
+<!-- comments -->
+<p > Any other comments which would make you more likeable and a better partner for Vanessa Bloome </p>
+<div>
+<textarea name="comment" rows="8"  class="input right" placeholder="Enter comments here..."></textarea>
+</div>
+
+<button id="submit" type="submit"> Submit </button>
+
+    </form>
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    
+  </body>
+</html>

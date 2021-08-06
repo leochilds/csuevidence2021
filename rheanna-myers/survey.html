@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+    <title>Social Media in Business Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Social Media in Business Survey Form</h1>
+    <p id="description">This is a survey form about Social Media in Business.</p>
+<form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" required placeholder="name here">
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" required placeholder="email here">
+    <label id="number-label" for="number">Number:</label>
+    <input id="number" type="number" name="quantity" min="0" max="926" required placeholder="number here">
+    <select name="dropdown" id="dropdown">
+        <option selected>What is your target audience?</option>
+        <option value="Parents/family">Parents/family</option>
+        <option value="eighttosixteen">eight to sixteen</option>
+        <option value="seventeenplus">seventeen plus</option>
+    </select>
+    
+<div>
+    <p>What type of Social Media content do you prefer to post?</p>
+    <input type="radio" id="Blogpost" name="Preference" value="Blogpost">
+    <label for="Blogpost"> Blog Post</label><br>
+    <input type="radio" id="Image" name="Preference" value="Image">
+    <label for="Image"> Image</label><br>
+    <input type="radio" id="Quiz" name="Preference" value="Quiz">
+    <label for="Quiz"> Quiz</label> 
+    <input type="radio" id="Other" name="Preference" value="Other">
+    <label for="Other"> Other</label> 
+</div>
+   
+
+<div>
+    <p>Which Social Medias do you use?</p>
+    <input type="checkbox" id="Facebook" name="socialmedias" value="Facebook">
+    <label for="Facebook"> Facebook</label><br>
+    <input type="checkbox" id="Instagram" name="socialmedias" value="Instagram">
+    <label for="Instagram"> Instagram</label><br>
+    <input type="checkbox" id="Twitter" name="socialmedias" value="Twitter">
+    <label for="Twitter"> Twitter</label>
+</div>
+  <p>Please write any additional comments here:</p>
+   <textarea name="additional comments" rows="3" cols="20">
+       
+        </textarea>
+    <button id="submit" type="submit">submit</button>
+</form>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

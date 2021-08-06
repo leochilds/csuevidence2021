@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Food</title>
+  </head>
+  <body>
+    <h1 id="title">Food</h1>
+
+    <p id="description">A servey on food, because why not?</p>
+
+    <form id="survey-form">
+      <ol>
+        <li><label id="name-label" for="name">name</label>
+        <input id="name" required type="text" placeholder="name here"></li>
+        
+        <li><label id="email-label" for="email">email</label>
+        <input id="email" type="email" required placeholder="email"></li>
+    
+        <li><label id="number-label" for="number">number</label>
+        <input id="number" type="number" required placeholder="number" name="quantity" min="0" max="52"></li>
+       
+     </ol>
+
+
+        <label id="diet">diet</label>
+        <label for="standard-diet"><input id="standard-diet" type="radio" name="diet" value="standard">standard</label>
+        <label for="vegitarian"><input id="vegitarian" type="radio" name="diet" value="vegitarian">vegitarian</label>
+        <label for="pescatarian"><input id="pescatarian" type="radio" name="diet" value="pescatarian">pescatarian</label>
+        <label for="custom"><input id="custom" type="radio" name="diet" value="custom">custom</label>
+        
+        <label for="manual"><input id="manual" type="checkbox" name="cheese" value="manual">manual</label>
+         <label for="automatic"><input id="automatic" type="checkbox" name="ham" value="automatic">automatic</label>
+         <button id="submit" type="submit">Submit</button>
+      
+         <select id="dropdown" name="dropdown">
+             <option id="dropdown-1" value="....">....</option>
+             <option id="dropdown-2" value="....">....</option>
+             <option id="dropdown-3" value="....">....</option>
+             <option id="dropdown-4" value="....">....</option>
+
+            </select>
+
+            <textarea></textarea>
+    </form>    
+
+    Atkins diet.
+    The Zone diet.
+    Ketogenic diet.
+    Vegetarian diet.
+    Vegan diet.
+    South Beach diet.
+    Raw food diet.
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
